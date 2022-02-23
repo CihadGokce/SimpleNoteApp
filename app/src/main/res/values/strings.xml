@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="title_text">Başlık</string>
+    <string name="content_text">İçerik</string>
+    <string name="save_note">Kaydet</string>
+    <string name="add_note">Not Ekle</string>
+    <string name="modify_text">Düzenlendi</string>
+    <string name="update_text">Güncelle</string>
+    <string name="edit">Düzenle</string>
+    <string name="delete">Sil</string>
+    <string name="insert_note_success_msg">Başarılı Şekilde Not Eklendi</string>
+    <string name="insert_note_err_msg">Boşlukları Doldurunuz</string>
+    <string name="update_note_success_msg">Başarılı Şekilde Güncellendi</string>
+    <string name="delete_note_success_msg">Başarılı Şekilde Silindi</string>
+    <string name="warning">Uyarı</string>
+    <string name="delete_note_question_msg">id li Notunuzu Silmek İstediğinize Emin Misiniz ?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+
+</resources>

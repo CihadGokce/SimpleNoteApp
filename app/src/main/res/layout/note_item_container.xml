@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_standart"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/item_layout"
+    android:background="@drawable/note_background">
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_standart"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_text_size"
+        android:text="@string/title_text"/>
+
+    <TextView
+        android:id="@+id/content_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="@dimen/padding_standart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_text_size"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/min_text_size"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/modify_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/secondary"
+        android:textSize="@dimen/min_text_size"
+        android:background="@drawable/note_border"
+        android:textStyle="bold"
+        android:text="@string/modify_text"/>
+
+
+</LinearLayout>

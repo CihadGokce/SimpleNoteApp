@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.edit.editNoteFragment">
+
+        <TextView
+            android:id="@+id/editDate_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_layout_marginTop"
+            android:layout_marginEnd="@dimen/margin_standart"
+            android:padding="@dimen/padding_standart"
+            android:elevation="@dimen/elevation_size"
+            android:background="@drawable/note_border"
+            android:text="dd/mm/yyyy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/min_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTitle_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standart"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:background="@drawable/note_border"
+            android:elevation="@dimen/elevation_size"
+            android:enabled="false"
+            android:gravity="left"
+            android:hint="@string/title_text"
+            android:inputType="textPersonName"
+            android:minWidth="200dp"
+            android:padding="@dimen/padding_standart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_edit_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_text"
+            android:padding="10dp"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/min_text_size"
+            android:background="@drawable/note_border"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editContent_et"
+            app:layout_constraintEnd_toEndOf="@+id/editContent_et" />
+
+        <EditText
+            android:id="@+id/editContent_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standart"
+            android:layout_marginTop="@dimen/content_edit_margin_top"
+            android:layout_marginEnd="@dimen/margin_standart"
+            android:background="@drawable/note_border"
+            android:elevation="@dimen/elevation_size"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="top"
+            android:hint="@string/content_text"
+            android:minHeight="400dp"
+            android:inputType="text|textMultiLine"
+            android:padding="@dimen/padding_standart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTitle_et" />
+
+
+
+        <Button
+            android:id="@+id/edit_btn"
+            style="@style/myButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/content_edit_margin_top"
+            android:text="@string/update_text"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editContent_et" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
